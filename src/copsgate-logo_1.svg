@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="width:100%; height:auto;" fill="#fbbe01">
+  <text x="300" y="200" text-anchor="middle" font-size="48" font-weight="bold">COPSGATE</text>
+  <rect x="150" y="220" width="300" height="4" />
+  <text x="300" y="260" text-anchor="middle" font-size="24">SECURE ACCESS</text>
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#202530" />
+      <stop offset="100%" stop-color="#101520" />
+    </linearGradient>
+    
+    <!-- Shield shape for the gate animation -->
+    <clipPath id="shieldClip">
+      <path d="M300,80 L420,130 L420,270 L300,320 L180,270 L180,130 Z" />
+    </clipPath>
+    
+    <!-- Star for animated particles -->
+    <polygon id="star" points="0,0 2,5 0,10 5,7 10,10 8,5 10,0 5,3" />
+    
+    <!-- Shimmer effect -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbe01" stop-opacity="0" />
+      <stop offset="50%" stop-color="#fbbe01" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#fbbe01" stop-opacity="0" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Animated security grid pattern in the background -->
+  <g stroke="#fbbe01" stroke-width="0.5" opacity="0.2">
+    <!-- Horizontal lines -->
+    <g>
+      <line x1="0" y1="40" x2="600" y2="40">
+        <animate attributeName="y1" values="40;60;40" dur="10s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="40;60;40" dur="10s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="80" x2="600" y2="80">
+        <animate attributeName="y1" values="80;90;80" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="80;90;80" dur="12s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="120" x2="600" y2="120">
+        <animate attributeName="y1" values="120;130;120" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="120;130;120" dur="9s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="160" x2="600" y2="160">
+        <animate attributeName="y1" values="160;180;160" dur="15s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="160;180;160" dur="15s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="200" x2="600" y2="200">
+        <animate attributeName="y1" values="200;190;200" dur="11s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="200;190;200" dur="11s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="240" x2="600" y2="240">
+        <animate attributeName="y1" values="240;250;240" dur="13s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="240;250;240" dur="13s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="280" x2="600" y2="280">
+        <animate attributeName="y1" values="280;270;280" dur="10s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="280;270;280" dur="10s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="320" x2="600" y2="320">
+        <animate attributeName="y1" values="320;330;320" dur="14s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="320;330;320" dur="14s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="360" x2="600" y2="360">
+        <animate attributeName="y1" values="360;350;360" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="360;350;360" dur="12s" repeatCount="indefinite" />
+      </line>
+    </g>
+    
+    <!-- Vertical lines -->
+    <g>
+      <line x1="60" y1="0" x2="60" y2="400">
+        <animate attributeName="x1" values="60;70;60" dur="13s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="60;70;60" dur="13s" repeatCount="indefinite" />
+      </line>
+      <line x1="120" y1="0" x2="120" y2="400">
+        <animate attributeName="x1" values="120;110;120" dur="15s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="120;110;120" dur="15s" repeatCount="indefinite" />
+      </line>
+      <line x1="180" y1="0" x2="180" y2="400">
+        <animate attributeName="x1" values="180;190;180" dur="11s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="180;190;180" dur="11s" repeatCount="indefinite" />
+      </line>
+      <line x1="240" y1="0" x2="240" y2="400">
+        <animate attributeName="x1" values="240;230;240" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="240;230;240" dur="9s" repeatCount="indefinite" />
+      </line>
+      <line x1="300" y1="0" x2="300" y2="400">
+        <animate attributeName="x1" values="300;310;300" dur="14s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="300;310;300" dur="14s" repeatCount="indefinite" />
+      </line>
+      <line x1="360" y1="0" x2="360" y2="400">
+        <animate attributeName="x1" values="360;350;360" dur="10s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="360;350;360" dur="10s" repeatCount="indefinite" />
+      </line>
+      <line x1="420" y1="0" x2="420" y2="400">
+        <animate attributeName="x1" values="420;430;420" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="420;430;420" dur="12s" repeatCount="indefinite" />
+      </line>
+      <line x1="480" y1="0" x2="480" y2="400">
+        <animate attributeName="x1" values="480;470;480" dur="15s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="480;470;480" dur="15s" repeatCount="indefinite" />
+      </line>
+      <line x1="540" y1="0" x2="540" y2="400">
+        <animate attributeName="x1" values="540;550;540" dur="13s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="540;550;540" dur="13s" repeatCount="indefinite" />
+      </line>
+    </g>
+  </g>
+  
+  <!-- Shield/Gate main element -->
+  <g transform="translate(0, 0)">
+    <!-- Shield outline with pulse animation -->
+    <path d="M300,80 L420,130 L420,270 L300,320 L180,270 L180,130 Z" 
+          fill="none" 
+          stroke="#fbbe01" 
+          stroke-width="4">
+      <animate attributeName="stroke-width" 
+               values="4;6;4" 
+               dur="3s" 
+               repeatCount="indefinite" />
+      <animate attributeName="opacity"
+               values="0.7;1;0.7"
+               dur="3s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Shield inner fill -->
+    <path d="M300,80 L420,130 L420,270 L300,320 L180,270 L180,130 Z" 
+          fill="#101520" 
+          opacity="0.8" />
+    
+    <!-- Gate animation -->
+    <g clip-path="url(#shieldClip)">
+      <!-- Left gate -->
+      <rect x="180" y="130" width="60" height="140" fill="#fbbe01">
+        <animate attributeName="x" 
+                 values="180;240;180" 
+                 dur="5s" 
+                 repeatCount="indefinite"
+                 begin="1s" />
+      </rect>
+      
+      <!-- Right gate -->
+      <rect x="360" y="130" width="60" height="140" fill="#fbbe01">
+        <animate attributeName="x" 
+                 values="360;300;360" 
+                 dur="5s" 
+                 repeatCount="indefinite"
+                 begin="1s" />
+      </rect>
+    </g>
+    
+    <!-- Shimmer overlay -->
+    <path d="M300,80 L420,130 L420,270 L300,320 L180,270 L180,130 Z" 
+          fill="url(#shimmer)"
+          opacity="0.3" />
+          
+    <!-- Digital circuit lines within shield -->
+    <g stroke="#fbbe01" stroke-width="1.5" opacity="0.8">
+      <!-- Horizontal circuit lines -->
+      <line x1="190" y1="160" x2="410" y2="160" />
+      <line x1="190" y1="200" x2="410" y2="200" />
+      <line x1="190" y1="240" x2="410" y2="240" />
+      
+      <!-- Vertical circuit lines -->
+      <line x1="230" y1="140" x2="230" y2="260" />
+      <line x1="300" y1="100" x2="300" y2="300" />
+      <line x1="370" y1="140" x2="370" y2="260" />
+      
+      <!-- Circuit nodes -->
+      <circle cx="230" cy="160" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="230" cy="200" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="230" cy="240" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" />
+      </circle>
+      
+      <circle cx="300" cy="160" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="300" cy="200" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="300" cy="240" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="4.5s" repeatCount="indefinite" />
+      </circle>
+      
+      <circle cx="370" cy="160" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="370" cy="200" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="370" cy="240" r="3" fill="#fbbe01">
+        <animate attributeName="r" values="3;5;3" dur="4.2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Outer security scan effect -->
+    <ellipse cx="300" cy="200" rx="250" ry="150" fill="none" stroke="#fbbe01" stroke-width="1" opacity="0.1">
+      <animate attributeName="rx" values="250;260;250" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="150;155;150" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <ellipse cx="300" cy="200" rx="220" ry="130" fill="none" stroke="#fbbe01" stroke-width="1" opacity="0.15">
+      <animate attributeName="rx" values="220;230;220" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="130;135;130" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.15;0.25;0.15" dur="6s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <ellipse cx="300" cy="200" rx="190" ry="110" fill="none" stroke="#fbbe01" stroke-width="1" opacity="0.2">
+      <animate attributeName="rx" values="190;200;190" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="110;115;110" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.3;0.2" dur="7s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <!-- Company Name: COPSGATE -->
+  <g>
+    <!-- Main Title with Letter-by-Letter Animation -->
+    <text text-anchor="middle" 
+          font-family="Arial, sans-serif" 
+          font-weight="bold" 
+          font-size="42">
+      <!-- COPS -->
+      <tspan x="215" y="350" fill="#ffffff">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0s" fill="freeze" />
+        C
+      </tspan>
+      <tspan x="243" y="350" fill="#ffffff">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.2s" fill="freeze" />
+        O
+      </tspan>
+      <tspan x="271" y="350" fill="#ffffff">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.4s" fill="freeze" />
+        P
+      </tspan>
+      <tspan x="299" y="350" fill="#ffffff">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze" />
+        S
+      </tspan>
+      
+      <!-- GATE -->
+      <tspan x="331" y="350" fill="#fbbe01">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.8s" fill="freeze" />
+        G
+      </tspan>
+      <tspan x="359" y="350" fill="#fbbe01">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.0s" fill="freeze" />
+        A
+      </tspan>
+      <tspan x="387" y="350" fill="#fbbe01">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.2s" fill="freeze" />
+        T
+      </tspan>
+      <tspan x="409" y="350" fill="#fbbe01">
+        <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.4s" fill="freeze" />
+        E
+      </tspan>
+    </text>
+    
+    <!-- Tagline -->
+    <text x="300" y="375" 
+          text-anchor="middle" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          fill="#b0b0b0"
+          opacity="0">
+      SECURE ACCESS SOLUTIONS
+      
+      <!-- Text reveal animation with delay -->
+      <animate attributeName="opacity" 
+               from="0" to="0.8" 
+               dur="1s" 
+               fill="freeze"
+               begin="1.6s" />
+    </text>
+  </g>
+  
+  <!-- Animated particles -->
+  <g>
+    <use href="#star" x="220" y="100" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" begin="0.1s" />
+    </use>
+    <use href="#star" x="380" y="120" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="4s" repeatCount="indefinite" begin="0.5s" />
+    </use>
+    <use href="#star" x="200" y="250" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.5s" repeatCount="indefinite" begin="1.2s" />
+    </use>
+    <use href="#star" x="400" y="230" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.8s" repeatCount="indefinite" begin="2s" />
+    </use>
+    <use href="#star" x="300" y="160" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite" begin="0.8s" />
+    </use>
+    <use href="#star" x="260" y="280" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="4.2s" repeatCount="indefinite" begin="1.5s" />
+    </use>
+    <use href="#star" x="340" y="260" fill="#fbbe01">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" repeatCount="indefinite" begin="0.3s" />
+    </use>
+  </g>
+</svg>
